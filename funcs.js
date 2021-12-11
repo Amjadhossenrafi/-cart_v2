@@ -49,7 +49,7 @@ export const initialRender = (array, parent) => {
     parent.append(div);
   });
 };
-//function for rendering items specifically the bucket/cart area
+//function for rendering items specifically in the bucket/cart area
 export const renderBucket = (array, parent) => {
   removeDup(array).forEach((item) => {
     let numberOfItems = findDup(array, item).length;
