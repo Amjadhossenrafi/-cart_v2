@@ -1,0 +1,30 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+header
+{
+    text-align: center;
+}
+.product-preview{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.product-preview img{
+    height: 8rem;
+}
+button{
+    border: none;
+    padding: .5rem 1rem;
+    margin: 1rem;
+    background-color: skyblue;
+    color: white;
+    cursor: pointer;
+}
