@@ -22,7 +22,6 @@ addBtns.forEach((btn) => {
     let id = parseInt(e.target.parentElement.getAttribute("id"));
     const addedItem = products.filter((item) => item.id == id);
     bucket.push(...addedItem);
-    bucketContainer.innerHTML = null;
     renderBucket(bucket, bucketContainer);
     showNumberOfItems(bucket, numberOfItemsContainer);
     showPrice(bucket, priceContainer);
@@ -37,7 +36,6 @@ bucketContainer.addEventListener("click", (e) => {
     let index = bucket.indexOf(filtered[0]);
     const remainingItems = removeFromArray(bucket, index);
     bucket = remainingItems;
-    bucketContainer.innerHTML = null;
     renderBucket(bucket, bucketContainer);
     showNumberOfItems(bucket, numberOfItemsContainer);
     showPrice(bucket, priceContainer);

@@ -51,6 +51,7 @@ export const initialRender = (array, parent) => {
 };
 //function for rendering items specifically in the bucket/cart area
 export const renderBucket = (array, parent) => {
+  parent.innerHTML = null;
   removeDup(array).forEach((item) => {
     let numberOfItems = findDup(array, item).length;
     let div = document.createElement("div");
